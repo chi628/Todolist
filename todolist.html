@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+
+    <script src="https://kit.fontawesome.com/8f8b34b02d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- class="container" -->
+    <div class="container">
+        <header>
+            <h1>ToDos</h1>
+            <input type="text" name="" id="" class="todo" placeholder="Todos ...">
+            <button type="button" class="add_btn" disabled="disabled">加入代辦事項</button>
+        </header>
+        <div class="list">
+            <div class="list-header">
+                <span data-id="all"  class="list_tag active">全部</span>
+                <span data-id="undone"  class="list_tag">未完成</span>
+                <span data-id="done"  class="list_tag">已完成</span>
+            </div>
+            <div class="list-container">
+                <ul class="all_list">
+                </ul>
+                <ul class="undone">
+                </ul>
+                <ul class="done">
+                </ul>
+            </div>
+            <div class="list-footer">
+            </div>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    // emmet tab 自動展開
+    "emmet.triggerExpansionOnTab": true,
+    // template 展開
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "plaintext": "jade",
+        "ejs": "html",
+    },
+}

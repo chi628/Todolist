@@ -1,0 +1,193 @@
+*,
+*::before,
+*:after {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #F7EFE5;
+    color: #7C644B;
+}
+
+:focus {
+    outline: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #7C644B;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #7C644B;
+}
+
+.edit {
+    position: relative;
+    top: -3px;
+    width: 50%;
+    height: 35px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #7C644B;
+}
+
+header {
+    width: 1200px;
+     margin: 0 auto;
+    h1 {
+        font-size: 28px;
+        line-height: 2;
+        font-family: 'Piazzolla', serif;
+        font-weight: 900;
+        font-style: italic;
+        text-align: center;
+    }
+
+    input {
+        width: 1000px;
+        border: none;
+        height: 50px;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100px;
+        height: 50px;
+        border: none;
+        background-color: #7C644B;
+        color: #F7EFE5;
+        font-size: 14px;
+
+        &:hover {
+            cursor: pointer;
+        }
+        &:disabled {
+            cursor: not-allowed;
+            background-color: #B3A18F;
+            color: #F7EFE5;
+        }
+    }
+}
+
+.list {
+    margin: 15px auto;
+
+    &-header {
+        display: flex;
+    }
+
+    &_tag {
+        border-left: 2px solid #7C644B;
+        border-top: 2px solid #7C644B;
+        border-right: 2px solid #7C644B;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px #7C644B;
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        padding: 12px 0;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #7C644B;
+            color: #F7EFE5;
+        }
+
+        &.active {
+            background-color: #7C644B;
+            color: #F7EFE5;
+        }
+    }
+
+    &-container {
+        position: relative;
+        // top: ;
+        border-left: 2px solid #7C644B;
+        border-top: 2px solid #7C644B;
+        border-right: 2px solid #7C644B;
+        border-radius: 5px;
+        padding: 20px;
+
+        ul {
+            li {
+                position: relative;
+                display: flex;
+                width: 100%;
+                height: 50px;
+                box-shadow: 0px 0px 2px 0 #7C644B;
+                padding: 10px;
+
+                label {
+                    display: inline-block;
+                    width: 300px;
+                    font-size: 18px;
+                    // font-weight: 700;
+
+                    &.done{
+                        text-decoration: line-through ;
+                    }
+                }
+
+                button {
+                    border: none;
+                    background-color: #F7EFE5;
+                    position: absolute;
+                    right: 20px;
+                    color: #7C644B;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .edit {
+                    display: none;
+                }
+
+                &.editing {
+                    .view {
+                        display: none;
+                    }
+
+                    .edit {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    &-footer{
+        position: relative;
+        display:flex;
+        top: -3px;
+        border:2px solid #7C644B;
+        border-radius: 5px;
+        background-color: #7C644B;
+        padding: 10px;
+        letter-spacing: 1px;
+
+        p{
+            color: #F7EFE5;
+        }
+        
+        button{
+            position: absolute;
+            // width: 30px;
+            height: 30px;
+            right: 35px;
+            top: 5px;
+            border: none;
+            background-color: #7C644B;
+            color: #F7EFE5;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
